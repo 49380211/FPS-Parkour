@@ -14,7 +14,7 @@ public class UiManager : MonoBehaviour
     }
     public void UpdateMoneyTxt(string moneyAmount)
     {
-        txtMoney.text = moneyAmount;
+        txtMoney.text = "$" + moneyAmount;
     }
 
 }
