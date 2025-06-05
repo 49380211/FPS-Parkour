@@ -4,11 +4,21 @@ using UnityEngine;
 
 public class MercanciaScript : MonoBehaviour
 {
+    public float cost;
+    public MoneyManager moneyManager;
+
+    void Start()
+    {
+        moneyManager = FindObjectOfType<MoneyManager>();
+    }
+
     // Start is called before the first frame update
     void OnCollisionEnter(Collision collision)
     {
        if (collision.gameObject.name == "Player")
        {
+          //actualizar dinero por la compra
+          moneyManager.UpdateMoney(-cost);
           Destroy(gameObject);
 
        }
