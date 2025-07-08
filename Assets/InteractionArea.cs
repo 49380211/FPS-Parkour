@@ -21,7 +21,7 @@ public class InteractionArea : MonoBehaviour
         {
             if (mercancia)
             {
-                Destroy(mercancia.gameObject);
+                mercancia.GetComponent<MercanciaScript>().onInteraction();
                 StopInteraction();
             }
         }

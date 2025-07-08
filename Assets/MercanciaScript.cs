@@ -12,13 +12,9 @@ public class MercanciaScript : MonoBehaviour
         moneyManager = FindObjectOfType<MoneyManager>();
     }
 
-    // Start is called before the first frame update
-    void update()
+    public void onInteraction()
     {
-       if (Input.GetKeyDown(KeyCode.E))
-       {
-          //actualizar dinero por la compra
-          moneyManager.UpdateMoney(-cost);
-       }
+        moneyManager.UpdateMoney(-cost);
+        Destroy(gameObject);
     }
 }
