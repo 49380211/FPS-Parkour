@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641275, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3140,7 +3140,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1607779229}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 89e269ffc8af87d42a5d125f2d1b20db, type: 3}
   m_Name: 
@@ -4881,8 +4881,13 @@ PrefabInstance:
     - target: {fileID: 7536508096314019453, guid: 584c0a7ce031c7748ac5dc631324daa2,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7536508096314019453, guid: 584c0a7ce031c7748ac5dc631324daa2,
+        type: 3}
+      propertyPath: moneyManager
+      value: 
+      objectReference: {fileID: 1607779230}
     - target: {fileID: 8018808875056669277, guid: 584c0a7ce031c7748ac5dc631324daa2,
         type: 3}
       propertyPath: m_Name

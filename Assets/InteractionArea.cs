@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class InteractionArea : MonoBehaviour
-{ 
+{
 
     public GameObject interactionMessage;
     public MercanciaScript mercancia;
@@ -12,7 +12,6 @@ public class InteractionArea : MonoBehaviour
     void Start()
     {
         interactionMessage.SetActive(false);
-
     }
 
     // Update is called once per frame

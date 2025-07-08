@@ -13,14 +13,12 @@ public class MercanciaScript : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void OnCollisionEnter(Collision collision)
+    void update()
     {
-       if (collision.gameObject.name == "Player")
+       if (Input.GetKeyDown(KeyCode.E))
        {
           //actualizar dinero por la compra
           moneyManager.UpdateMoney(-cost);
-          Destroy(gameObject);
-
        }
     }
 }
